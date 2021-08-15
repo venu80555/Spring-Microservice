@@ -1,0 +1,18 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka:8761/eureka/
+  instance:
+    hostname: paymentclient
+server:
+  port: 9091
+spring:
+  application:
+    name: PAYMENT-CLIENT
+  zipkin:
+    base-url: http://zipkin:9411/
+logging:
+  level:
+    root: debug
